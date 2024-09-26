@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class ErrorController {
 
 	private static Logger logger = LoggerFactory.getLogger(ErrorController.class);
-	//
+	//**** */
 	@ExceptionHandler(Throwable.class)
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
 	public String exception(final Throwable throwable, final Model model) {
